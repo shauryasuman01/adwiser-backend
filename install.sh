@@ -4,6 +4,9 @@
 set -Eeuo pipefail
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
+source ./prerequisites.sh
+
+adwiser_prerequisites ingestion
 
 umask 077
 
